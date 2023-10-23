@@ -7,7 +7,7 @@ import {addNewTask} from "../redux/toolkitSlice";
 import {useDispatch} from "react-redux";
 import {FormControl} from "react-bootstrap";
 
-function Example() {
+function ModalAddTask() {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -23,6 +23,7 @@ function Example() {
                 <Button variant="primary" onClick={handleShow}>
                     Створити завдання
                 </Button>
+
             </div>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
@@ -57,4 +58,4 @@ function Example() {
     );
 }
 
-export default Example;
+export default ModalAddTask;

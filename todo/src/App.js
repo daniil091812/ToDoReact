@@ -1,14 +1,14 @@
 
-import ToDoList from "./ToDoList/ToDoList";
+import Task from "./Task/Task";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Example from "./ModalBootstrap/ModalAddTask";
 import React from "react";
+import BurgerMenu from "./BurgerMenu/BurgerMenu";
 
 function App() {
     return (
         <div>
-            <Example></Example>
-            <ToDoList/>
+            <BurgerMenu></BurgerMenu>
+            <Task/>
         </div>
     );
 }
